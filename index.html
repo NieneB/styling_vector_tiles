@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Styling Vector Tiles by: Niene Boeijen</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/monokai.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Introduction -->
+      <section data-background-image="backgrounds/Data Test Viewer WM Cloud stack - Mozilla Firefox.png">
+        <section>
+          <iframe src="https://codesandbox.io/embed/vanilla?fontsize=14" title="vanilla"
+            allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media"
+            style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+            sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+        </section>
+        <section>
+          <h1 id="animateBounce">Styling Vector Tiles</h1>
+          <h2 style="margin: 0 0 40px 0;"></h2>
+          <h3 style="margin: 0 0 0 0;">By: Niene Boeijen</h3>
+        </section>
+        <section>
+          <table>
+            <!-- <tr>
+							<td><i class="fa fa-envelope"> niene@webmapper.net</i></td>
+						</tr> -->
+            <tr>
+              <td><i class="fa fa-twitter-square"> @BNiene</i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-github"> NieneB</i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-link"> NieneB.nl</i></td>
+            </tr>
+            <!-- <tr>
+							<td><i class="fa fa-linkedin"> Niene Boeijen</i></td>
+						</tr> -->
+            <tr>
+              <td><i class="fa fa-instagram"> volvo_343_dl_1980</i></td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <h3>4 map examples and how to make them! </h3>
+          <!-- <img style="border:none;" src="backgrounds/all_4.png"> -->
+          <img style="border:none;" src="backgrounds/all_3.png">
+
+        </section>
+      </section>
+
+      <!-- Having a good tileset -->
+      <section data-background-image="backgrounds/Kaart | Paradijs in de Polder - Mozilla Firefox.png">
+        <!-- Know the tiles -->
+        <section>
+          <p> Map 1 </p>
+        </section>
+        <section>
+          <p class="codepen" data-height="665" data-theme-id="dark" data-default-tab="js,result" data-user="nieneb"
+            data-slug-hash="WBPMJb"
+            style="height: 665px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "
+            data-pen-title="#takeaway 1: a Polygon does not have to be a Polygon! ">
+            <span>See the Pen <a href="https://codepen.io/nieneb/pen/WBPMJb/">
+                #takeaway 1: a Polygon does not have to be a Polygon! </a> by Niene (<a
+                href="https://codepen.io/nieneb">@nieneb</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+        </section>
+        <section>
+          <h3
+            style="text-align: left; text-shadow: 2px 2px #636363; color: #a5db2e; background-color: rgba(255,255,255,0.4);">
+            Take-Away#1: </br> Know your tiles</h3>
+          <aside class="notes">
+            Good tile set. Show nature, forest etc.
+          </aside>
+        </section>
+        <!-- Good tiles == quick styling! -->
+        <section>
+          <h3
+            style="text-align: left; text-shadow: 2px 2px #636363; color: #a4de1b; background-color: rgba(255,255,255,0.4);">
+            Take-Away#2: </br> a Polygon does not have to be a Polygon!!</h3>
+          <aside class="notes">
+            Style Polygon as symbol points
+          </aside>
+        </section>
+      </section>
+      <!-- Custom sprites in Gimp and Inkscape -->
+      <section data-background-image="backgrounds/Take me to 1943 - Mozilla Firefox.png">
+        <section>
+          <p>Map 2</p>
+        </section>
+        <section>
+          <p>https://apps.webmapper.nl/takemeto1943/#14.5/51.76409/5.60482</p>
+        </section>
+        <section>
+          <h2>What is a sprite?</h2>
+          <p>sprite.json</p>
+          <p>sprite.png</p>
+          <a href="https://ta.webmapper.nl/wm/sprites/legend.png"></a>
+          <a href="https://ta.webmapper.nl/wm/sprites/legend.json"></a>
+
+        </section>
+        <section>
+          <p>retina @2x pixelRatio = 2</p>
+          <p> Make sprite bigger and then smaller for pixelRatio = 1
+
+            <aside class="notes">
+              A value of 1 indicates a classic 96 DPI (76 DPI on some platforms) display, while a value of 2 is expected
+              for
+              HiDPI/Retina displays.
+              ow can we solve this problem with high DPI devices? Basically, provide two different version of each
+              image.
+              all fixed size graphics needs to be doubled in width and height in order to keep the sharpness of the
+              graphic.
+            </aside>
+        </section>
+        <section>
+          <p>Make JSON by hand: </p>
+          <a href="https://docs.mapbox.com/mapbox-gl-js/style-spec/#sprite"> Sprite</a>
+          <pre>
+<code>
+{
+	"iconname" : {
+		"width": 32,
+		"height": 32,
+		"x" : 0,
+		"y": 0,
+		"pixelRatio": 1
+	},
+	{...}
+}
+</code>
+												</pre>
+        </section>
+        <section>
+          <img src="img_1943/gimp-logo.png" />
+          <p> Finding coordinates in GIMP</p>
+          <p> GIMP <a href="https://docs.gimp.org/2.10/en/gimp-pointer-info-dialog.html">pointer dialog</a></p>
+          <p> Export as png</p>
+        </section>
+      </section>
+      <!-- Combining layers -->
+      <section data-background-image="backgrounds/Test Viewer WM Cloud stack - Mozilla Firefox.png">
+        <section>
+          <p>Map 3</p>
+        </section>
+        <section>
+          <p class="codepen" data-height="665" data-theme-id="dark" data-default-tab="js,result" data-user="nieneb"
+            data-slug-hash="ZNPrRW"
+            style="height: 665px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "
+            data-pen-title="#takeaway 2: Combine layers! Paint like Bob Ross">
+            <span>See the Pen <a href="https://codepen.io/nieneb/pen/ZNPrRW/">
+                #takeaway 2: Combine layers! Paint like Bob Ross</a> by Niene (<a
+                href="https://codepen.io/nieneb">@nieneb</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <aside class="notes">Transparant sprites yeah! color opacity>> NO! Combine half transparent layers to create
+            new visual effects. </aside>
+        </section>
+        <section>
+
+          <h3
+            style="text-align: left; text-shadow: 2px 2px #636363; color: #688790; background-color: rgba(255,255,255,0.4);">
+            Take-Away#5: </br> Color Blender Tool <a
+              href="https://meyerweb.com/eric/tools/color-blend/#:::hex">https://meyerweb.com/eric/tools/color-blend/</a>
+          </h3>
+          <aside class="notes">Full colors but nicely blended. NO STUPID OPACITY!</aside>
+        </section>
+        <section>
+          <h3
+            style="text-align: left; text-shadow: 2px 2px #636363; color: #688790; background-color: rgba(255,255,255,0.4);">
+            Take-Away#3: </br>Draw like Bob Ross. Visually combine your layers</h3>
+        </section>
+        <section>
+          <h3
+            style="text-align: left; text-shadow: 2px 2px #636363; color: #688790; background-color: rgba(255,255,255,0.4);">
+            Take-Away#6: </br> Background on top! <a
+              href="https://www.transparenttextures.com/">www.transparenttextures.com</a> </h3>
+          <p>https://tb.webmapper.nl/wm/styles/1943.json</p>
+        </section>
+      </section>
+      <!-- Random air balloons -->
+      <section data-background-image="backgrounds/Crafty Map - Mozilla Firefox.png">
+        <section>
+          <p>Map 4</p>
+        </section>
+        <section>
+          <p> sprite in inkscape</p>
+          <img src="img_crafty/frame.png"> <img src="img_crafty/getekende_huisjes.jpg" />
+        </section>
+        <section>
+          <p><a href="http://turfjs.org/">turf.js</a> </p>
+          <p>Advanced geospatial analysis for browsers </p>
+          <p> GeoJSON simple creation</p>
+          <pre><code>
+var points = turf.randomPoint(25, {bbox: [-180, -90, 180, 90]})
+</code></pre>
+        </section>
+        <section>
+          <p class="codepen" data-height="665" data-theme-id="dark" data-default-tab="js,result" data-user="nieneb"
+            data-slug-hash="yWwKpo"
+            style="height:665px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "
+            data-pen-title="#takeaway 3: Javascript styling! ">
+            <span>See the Pen <a href="https://codepen.io/nieneb/pen/yWwKpo/">
+                #takeaway 3: Javascript styling! </a> by Niene (<a href="https://codepen.io/nieneb">@nieneb</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+        </section>
+        <section>
+          <p>
+            Use Map events!
+          </p>
+          <p>Seen the coffee stain? https://apps.webmapper.nl/takemeto1943/#14.5/51.76409/5.60482 </p>
+          <pre><code>if (!turf.booleanPointInPolygon(point, poly)){
+					// draw new random point when point out of view
+					map.getSource('points').setData(drawRandomPoints());
+					};</code></pre>
+        </section>
+      </section>
+
+      <!-- Wrap up -->
+      <section data-background-image="backgrounds/Data Test Viewer WM Cloud stack - Mozilla Firefox.png">
+        <section>
+          <table>
+            <tr>
+              <td><i class="fa fa-envelope"> niene@webmapper.net</i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-twitter-square"> @BNiene</i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-github"> NieneB</i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-link"> NieneB.nl</i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-linkedin"> Niene Boeijen</i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-instagram"> volvo_343_dl_1980</i></td>
+            </tr>
+          </table>
+        </section>
+
+
+      </section>
+
+
+
+    </div>
+  </div>
+
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      dependencies: [
+        { src: 'plugin/markdown/marked.js' },
+        { src: 'plugin/markdown/markdown.js' },
+        { src: 'plugin/notes/notes.js', async: true },
+        { src: 'plugin/highlight/highlight.js', async: true }
+      ]
+    });
+  </script>
+</body>
+
+</html>
