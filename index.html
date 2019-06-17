@@ -23,7 +23,6 @@
     document.getElementsByTagName('head')[0].appendChild(link);
   </script>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 </head>
 
@@ -32,12 +31,6 @@
     <div class="slides">
       <!-- Introduction -->
       <section data-background-image="backgrounds/Data Test Viewer WM Cloud stack - Mozilla Firefox.png">
-        <section>
-          <iframe src="https://codesandbox.io/embed/vanilla?fontsize=14" title="vanilla"
-            allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media"
-            style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-            sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
-        </section>
         <section>
           <h1 id="animateBounce">Styling Vector Tiles</h1>
           <h2 style="margin: 0 0 40px 0;"></h2>
@@ -66,63 +59,65 @@
           </table>
         </section>
         <section>
+          <p>All about visualization Tips & Tricks! </p>
+        </section>
+        <section>
           <h3>4 map examples and how to make them! </h3>
           <!-- <img style="border:none;" src="backgrounds/all_4.png"> -->
-          <img style="border:none;" src="backgrounds/all_3.png">
-
+          <img style="border:none;" src="backgrounds/all_4.png">
         </section>
       </section>
-
       <!-- Having a good tileset -->
       <section data-background-image="backgrounds/Kaart | Paradijs in de Polder - Mozilla Firefox.png">
         <!-- Know the tiles -->
         <section>
-          <p> Map 1 </p>
+          <p style="color: #535353;"> Map 1 </p>
+          <h2 style="color: #535353;">Paradijs in de Polder</h2>
         </section>
-        <section>
-          <p class="codepen" data-height="665" data-theme-id="dark" data-default-tab="js,result" data-user="nieneb"
-            data-slug-hash="WBPMJb"
-            style="height: 665px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "
-            data-pen-title="#takeaway 1: a Polygon does not have to be a Polygon! ">
-            <span>See the Pen <a href="https://codepen.io/nieneb/pen/WBPMJb/">
-                #takeaway 1: a Polygon does not have to be a Polygon! </a> by Niene (<a
-                href="https://codepen.io/nieneb">@nieneb</a>)
-              on <a href="https://codepen.io">CodePen</a>.</span>
-          </p>
-        </section>
-        <section>
+        <section style="color: #535353;">
           <h3
             style="text-align: left; text-shadow: 2px 2px #636363; color: #a5db2e; background-color: rgba(255,255,255,0.4);">
-            Take-Away#1: </br> Know your tiles</h3>
+            Take-Away #1: </br> &nbsp;&nbsp;&nbsp; Know your tiles</h3>
+          <p>Cartiqo Webmapper</p>
+          <img src="backgrounds/imae.png" />
           <aside class="notes">
-            Good tile set. Show nature, forest etc.
+            Good tile set. Show nature, forest etc. Good tiles == quick styling!
           </aside>
         </section>
-        <!-- Good tiles == quick styling! -->
+        <section style="color: #535353;">
+          <p>Easy understandable layers and naming</p>
+          <p>Uniform throughout all zoom levels and source data</p>
+          <p><a href="https://cartiqo.nl">cartiqo.nl</a></p>
+          <p><a href="https://github.com/webmapper/cartiqo-documentation">cartiqo documentation on Github</a></p>
+        </section>
+        <section
+          data-background-iframe="https://codesandbox.io/embed/takeaway-1-a-polygon-does-not-have-to-be-a-polygon-z4hh2?fontsize=14&codemirror=1&autoresize=1"
+          data-background-interactive> </section>
         <section>
           <h3
             style="text-align: left; text-shadow: 2px 2px #636363; color: #a4de1b; background-color: rgba(255,255,255,0.4);">
-            Take-Away#2: </br> a Polygon does not have to be a Polygon!!</h3>
+            Take-Away #2: </br> &nbsp;&nbsp;&nbsp; a Polygon does not have to be a Polygon!!</h3>
           <aside class="notes">
             Style Polygon as symbol points
           </aside>
         </section>
+        <section>
+          <img href="" />
+        </section>
       </section>
       <!-- Custom sprites in Gimp and Inkscape -->
-      <section data-background-image="backgrounds/Take me to 1943 - Mozilla Firefox.png">
+      <section style="color: #535353; data-background-image="backgrounds/Take me to 1943 - Mozilla Firefox.png">
         <section>
           <p>Map 2</p>
-        </section>
-        <section>
-          <p>https://apps.webmapper.nl/takemeto1943/#14.5/51.76409/5.60482</p>
-        </section>
-        <section>
-          <h2>What is a sprite?</h2>
-          <p>sprite.json</p>
-          <p>sprite.png</p>
-          <a href="https://ta.webmapper.nl/wm/sprites/legend.png"></a>
-          <a href="https://ta.webmapper.nl/wm/sprites/legend.json"></a>
-
+          <h1 style="color: #535353;">Take me to 1943!</h1>
+          <a href="https://apps.webmapper.nl/takemeto1943/#14.5/51.76409/5.60482">> the app <</a> 
+        </section> 
+        <section style="color: #535353;">
+              <h2>What is a sprite?</h2>
+              <p>sprite.json</p>
+              <p>sprite.png</p>
+              <a href="https://ta.webmapper.nl/wm/sprites/legend.png"></a>
+              <a href="https://ta.webmapper.nl/wm/sprites/legend.json"></a>
         </section>
         <section>
           <p>retina @2x pixelRatio = 2</p>
@@ -167,17 +162,13 @@
       <section data-background-image="backgrounds/Test Viewer WM Cloud stack - Mozilla Firefox.png">
         <section>
           <p>Map 3</p>
+          <h3>Bevrijdingskaart.nl</h3>
         </section>
         <section>
-          <p class="codepen" data-height="665" data-theme-id="dark" data-default-tab="js,result" data-user="nieneb"
-            data-slug-hash="ZNPrRW"
-            style="height: 665px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "
-            data-pen-title="#takeaway 2: Combine layers! Paint like Bob Ross">
-            <span>See the Pen <a href="https://codepen.io/nieneb/pen/ZNPrRW/">
-                #takeaway 2: Combine layers! Paint like Bob Ross</a> by Niene (<a
-                href="https://codepen.io/nieneb">@nieneb</a>)
-              on <a href="https://codepen.io">CodePen</a>.</span>
-          </p>
+          <p>Radom (handdrawn/printed) effects?</p>
+        </section>
+        <section data-background-color="#f2f2f2" data-background-position:"center"
+          data-background-iframe="http://localhost:3000/" data-background-interactive>
           <aside class="notes">Transparant sprites yeah! color opacity>> NO! Combine half transparent layers to create
             new visual effects. </aside>
         </section>
@@ -185,33 +176,37 @@
 
           <h3
             style="text-align: left; text-shadow: 2px 2px #636363; color: #688790; background-color: rgba(255,255,255,0.4);">
-            Take-Away#5: </br> Color Blender Tool <a
+            Take-Away #5: </br> &nbsp;&nbsp;&nbsp; Color Blender Tool <a
               href="https://meyerweb.com/eric/tools/color-blend/#:::hex">https://meyerweb.com/eric/tools/color-blend/</a>
           </h3>
+          <p> No opacity</p>
           <aside class="notes">Full colors but nicely blended. NO STUPID OPACITY!</aside>
         </section>
         <section>
           <h3
             style="text-align: left; text-shadow: 2px 2px #636363; color: #688790; background-color: rgba(255,255,255,0.4);">
-            Take-Away#3: </br>Draw like Bob Ross. Visually combine your layers</h3>
+            Take-Away #3: </br> &nbsp;&nbsp;&nbsp; Draw like Bob Ross. Visually combine your layers</h3>
+            <p> Transparant sprites</p>
         </section>
         <section>
           <h3
             style="text-align: left; text-shadow: 2px 2px #636363; color: #688790; background-color: rgba(255,255,255,0.4);">
-            Take-Away#6: </br> Background on top! <a
+            Take-Away #6: </br> &nbsp;&nbsp;&nbsp; Background on top! <a
               href="https://www.transparenttextures.com/">www.transparenttextures.com</a> </h3>
-          <p>https://tb.webmapper.nl/wm/styles/1943.json</p>
+            <a href="https://tb.webmapper.nl/wm/styles/1943.json">example json</a>
         </section>
       </section>
       <!-- Random air balloons -->
       <section data-background-image="backgrounds/Crafty Map - Mozilla Firefox.png">
         <section>
           <p>Map 4</p>
+          <h1>Crafty map</h1>
+          <p>More then styling!</p>
         </section>
-        <section>
+        <!-- <section>
           <p> sprite in inkscape</p>
           <img src="img_crafty/frame.png"> <img src="img_crafty/getekende_huisjes.jpg" />
-        </section>
+        </section> -->
         <section>
           <p><a href="http://turfjs.org/">turf.js</a> </p>
           <p>Advanced geospatial analysis for browsers </p>
@@ -266,12 +261,12 @@ var points = turf.randomPoint(25, {bbox: [-180, -90, 180, 90]})
             </tr>
           </table>
         </section>
-
-
+        <section>
+          <h1>Questions?</h1>
+          <img src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif"/>
+        </section>
+        <h1>Thank you! </h1>
       </section>
-
-
-
     </div>
   </div>
 
