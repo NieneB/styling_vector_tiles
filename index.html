@@ -106,20 +106,36 @@
         </section>
       </section>
       <!-- Custom sprites in Gimp and Inkscape -->
-      <section style="color: #535353; data-background-image="backgrounds/Take me to 1943 - Mozilla Firefox.png">
+      <section style="color: #535353;" data-background-image="backgrounds/Take me to 1943 - Mozilla Firefox.png">
         <section>
           <p>Map 2</p>
           <h1 style="color: #535353;">Take me to 1943!</h1>
           <a href="https://apps.webmapper.nl/takemeto1943/#14.5/51.76409/5.60482">> the app <</a> 
+
         </section> 
+        <section>
+          <p>Inspiration</p>
+                    <img src="img_1943/26-SW-Bergeyk-1943.jpg" height="500px"/>
+        </section>
         <section style="color: #535353;">
               <h2>What is a sprite?</h2>
               <p>sprite.json</p>
               <p>sprite.png</p>
-              <a href="https://ta.webmapper.nl/wm/sprites/legend.png"></a>
-              <a href="https://ta.webmapper.nl/wm/sprites/legend.json"></a>
+              <a href="https://docs.mapbox.com/help/glossary/sprite/">Mapbox</a>
+              <p> <a href="https://github.com/mapbox/spritezero">Tools</a> & <a href="https://developer.tomtom.com/maps-sdk-web/tutorials-advanced/creating-custom-sprites">tutorials</a> for icon sprites</p>
+              <aside class="notes">A sprite combines many icons into a single image. from video games to imporve preformance</aside>
         </section>
         <section>
+          <img src="https://docs.mapbox.com/help/img/screenshots/sprite.png"/>
+        </section>
+        <section>
+          <p>Not only for icons!! </p>
+          <p>Fills, Symbols, backround patterns</p>
+              <p class="fragment appear"> ..special effects! </p>
+                        <p class="fragment appear"> ..we will have to make them by hand! </p>
+
+        </section>
+        <!-- <section>
           <p>retina @2x pixelRatio = 2</p>
           <p> Make sprite bigger and then smaller for pixelRatio = 1
 
@@ -132,30 +148,56 @@
               all fixed size graphics needs to be doubled in width and height in order to keep the sharpness of the
               graphic.
             </aside>
-        </section>
+        </section> -->
         <section>
-          <p>Make JSON by hand: </p>
-          <a href="https://docs.mapbox.com/mapbox-gl-js/style-spec/#sprite"> Sprite</a>
+          <p>Make `sprite.json` by hand in text-editor </p>
           <pre>
 <code>
 {
-	"iconname" : {
-		"width": 32,
-		"height": 32,
-		"x" : 0,
-		"y": 0,
-		"pixelRatio": 1
-	},
-	{...}
+  "iconname" : {
+    "width": 32,
+    "height": 32,
+    "x" : 0,
+    "y": 0,
+    "pixelRatio": 1
+  }
 }
 </code>
-												</pre>
+</pre>
+<p> <a href="https://docs.mapbox.com/mapbox-gl-js/style-spec/#sprite"> Sprite spec by Mapbox</a></p>
+
         </section>
         <section>
-          <img src="img_1943/gimp-logo.png" />
-          <p> Finding coordinates in GIMP</p>
-          <p> GIMP <a href="https://docs.gimp.org/2.10/en/gimp-pointer-info-dialog.html">pointer dialog</a></p>
+          <p>Make `sprite.png` with Gimp! </p>
+          <img src="img_1943/gimp-logo.png" height="75px"/>
+          <p>One image, or combined canvas! </p>
+          <p> Finding coordinates in GIMP with the <a href="https://docs.gimp.org/2.10/en/gimp-pointer-info-dialog.html">pointer dialog</a></p>
           <p> Export as png</p>
+        </section>
+        <section>
+          <p>Inspiration</p>
+          <img src="img_1943/26-SW-Bergeyk-1943.jpg" height="500px" />
+        </section>
+        <section>
+          <img style="background-color: #f2f2f2; " src="https://ta.webmapper.nl/wm/sprites/legend.png" />
+        </section>
+        <section>
+          <img src="img_1943/gimp_selection.png" />
+        </section>
+        <section>
+          <img src="img_1943/cleaning_sprite.png"/>
+        </section>
+        <section>
+          <p>Final files: </p>
+          <ul>
+          <li><a href="https://ta.webmapper.nl/wm/sprites/legend.png">legend.png</a></li>
+          <li> <a href="https://ta.webmapper.nl/wm/sprites/legend.json">legend.json</a></li>
+        </section>
+        <section>
+          <img src="https://bertspaan.nl/paradijs-in-de-polder/sprite/sprite.png"/>
+        </section>
+        <section>
+          <img src="https://ta.webmapper.nl/wm/sprites/pattern.png"/>
         </section>
       </section>
       <!-- Combining layers -->
@@ -166,9 +208,11 @@
         </section>
         <section>
           <p>Radom (handdrawn/printed) effects?</p>
+          <img src="img_coastline/kust_nl_oorlogskaart.png"/>
+          <img src="img_coastline/kust_nl_oorlogskaart_zoom.png"/>
         </section>
         <section data-background-color="#f2f2f2" data-background-position:"center"
-          data-background-iframe="http://localhost:3000/" data-background-interactive>
+          data-background-iframe="https://nieneb.github.io/coastline_example_embed/index.html" data-background-interactive>
           <aside class="notes">Transparant sprites yeah! color opacity>> NO! Combine half transparent layers to create
             new visual effects. </aside>
         </section>
@@ -265,7 +309,9 @@ var points = turf.randomPoint(25, {bbox: [-180, -90, 180, 90]})
           <h1>Questions?</h1>
           <img src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif"/>
         </section>
-        <h1>Thank you! </h1>
+        <section>
+          <h1>Thank you! </h1>
+        </section>
       </section>
     </div>
   </div>
