@@ -51,12 +51,18 @@ body {
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
-  text-shadow: none;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  text-shadow:  
+    -1px -1px 0px #f2f2f2,  
+     1px -1px 0px #F2F2F2,
+    -1px 1px 0px #f2f2f2,
+     1px 1px 0px #F2F2F2;
+}
 
 .reveal h1 {
   font-size: 2em;
   text-transform: uppercase;
+  
 }
 
 .reveal h2 {
@@ -66,10 +72,11 @@ body {
   font-size: 1.3em; }
 
 .reveal h4 {
-  font-size: 1em; }
+  font-size: 1em;
+text-shadow: none; }
 
 .reveal h1 {
-  text-shadow: none; }
+   }
 /*********************************************
  * OTHER
  *********************************************/
