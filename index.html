@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/reveal.css">
   <link rel="stylesheet" href="css/theme/webmapper.css">
-
+  <script src="https://kit.fontawesome.com/1c94892226.js"></script>
   <!-- Theme used for syntax highlighting of code -->
   <link rel="stylesheet" href="lib/css/monokai.css">
 
@@ -22,7 +22,6 @@
     link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
     document.getElementsByTagName('head')[0].appendChild(link);
   </script>
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 
@@ -37,7 +36,8 @@
           <h2 style="margin: 0 0 40px 0;"></h2>
           <h3 style="margin: 0 0 0 0; text-shadow: none; color:#f2f2f2;">By: Niene Boeijen</h3>
           <h2 style="margin: 0 0 40px 0;"></h2>
-          <p ><a style="color:#f2f2f2;" href="https://nieneb.github.io/styling_vector_tiles/"> nieneb.github.io/styling_vector_tiles </a></p>
+          <p><a style="color:#f2f2f2;" href="https://nieneb.github.io/styling_vector_tiles/">
+              nieneb.github.io/styling_vector_tiles </a></p>
         </section>
         <section style="background-color: #f2f2f2;  color:#535353;">
           <h2>Niene Boeijen </h2>
@@ -53,9 +53,7 @@
                 height="200px">
             </a>
             <a href="http://webmapper.net">
-              <img
-                src="backgrounds/webmapper_logo_tekst.png"
-                height="120px"> </a>
+              <img src="backgrounds/webmapper_logo_tekst.png" height="120px"> </a>
           </div>
           <div style="float:right; width: 50%;">
             <p>Propedeuse Art Academy</p>
@@ -71,19 +69,17 @@
         <section>
           <a href="http://webmapper.net">
             <img style="background-color: #f2f2f2; border-radius: 5px; padding:10px;"
-              src="backgrounds/webmapper_logo_tekst.png"
-              height="150px" />
+              src="backgrounds/webmapper_logo_tekst.png" height="150px" />
           </a>
-              <h2>What the map can be</h2>
-              <p>Edward, Frederieke, Niene & Steven</p>
-              <p>Geography, Geo-informatie science, Art Academy, Geo Media Design</p>
-              <p> Utrecht, The Netherlands </p> 
+          <h2>What the map can be</h2>
+          <p>Edward, Frederieke, Niene & Steven</p>
+          <p>Geography, Geo-informatie science, Art Academy, Geo Media Design</p>
+          <p> Utrecht, The Netherlands </p>
         </section>
         <section>
           <a href="http://webmapper.net">
             <img style="background-color: #f2f2f2; border-radius: 5px; padding:10px;"
-              src="backgrounds/webmapper_logo_tekst.png"
-              height="150px" /> </a>
+              src="backgrounds/webmapper_logo_tekst.png" height="150px" /> </a>
           <h2>What the map can be</h2>
           <p>We make interactive map and geo data visualizations</p>
           <p>Our expertise is open {source; data; standards}</p>
@@ -100,16 +96,16 @@
         </section>
         <section>
           <p>4 Maps </p>
-          <p> Made by me! </p>
-          <p> Using Mapbox GL .js</p>
-          <p>Tiles from Cartiqo</p>
+          <p>Made by me! </p>
+          <p>Using <a href="https://docs.mapbox.com/mapbox-gl-js/api/">Mapbox-GL.js</a></p>
+          <p>Tiles from <a href="https://cartiqo.nl">Cartiqo</a></p>
           <p>Fonts & sprites by me</p>
-          <p>No access tokens needed! </p> 
+          <p>No access tokens needed! </p>
         </section>
         <section>
           <h3>Follow along!</h3>
-          <p>So many links & Code examples!</p>
-          <p>Examples on Codesandbox & Me github</p>
+          <p>So many links & code examples!</p>
+          <p>Examples on Codesandbox & Me github, see the icons <i class="fab fa-github"></i> </p>
           <a href="https://nieneb.github.io/styling_vector_tiles/"> nieneb.github.io/styling_vector_tiles </a>
           <p>bit.ly/2Ro3tsz</p>
         </section>
@@ -125,12 +121,12 @@
               <h3
                 style="text-align: left; text-shadow: 2px 2px #636363; color: #a5db2e; background-color: rgba(255,255,255,0.4);">
                 Take-Away #1: </br> &nbsp;&nbsp;&nbsp; Know your tiles & tiling scheme</h3>
-             
+
               <aside class="notes">
                 Good tile set. Show nature, forest etc. Good tiles == quick styling!
               </aside>
         </section>
-        <section  data-background-image="backgrounds/Topo_twitter.png"  style="color: #535353;">
+        <section data-background-image="backgrounds/Topo_twitter.png" style="color: #535353;">
           <svg id="cartiqoSvg" width="254.47" height="79.292" version="1.1" viewBox="0 0 67.328 20.979"
             xmlns="http://www.w3.org/2000/svg">
             <g id="cartiqoLogo">
@@ -203,9 +199,10 @@
               </path>
             </g>
           </svg>
-         <p>Easy layers means quick styling!</p>
-         <p>My ultimate goal was to be able to have a map by assigning just 6 colors</p>
-         <p>More about Cartiqo later today (11:20): Steven Ottens, Building a national vector tile set for the Netherlands</p>
+          <p>Easy layers means quick styling!</p>
+          <p>My ultimate goal was to be able to have a map by assigning just 6 colors</p>
+          <p>More about Cartiqo later today (11:20): Steven Ottens, Building a national vector tile set for the
+            Netherlands</p>
         </section>
         <section>
           <h1> How do I code my map? </h1>
@@ -228,13 +225,13 @@
           <h3
             style="text-align: left; text-shadow: 2px 2px #636363; color: #a4de1b; background-color: rgba(255,255,255,0.4);">
             Take-Away #2: </br> &nbsp;&nbsp;&nbsp; a Polygon does not have to be a Polygon!!</h3>
-            <p>Use sprites!</p>
+          <p>Use sprites!</p>
           <aside class="notes">
             Style Polygon as symbol points.
             Line not a line
             Point not a point
             Be Creative!
-            What are those dots? How to get them there? 
+            What are those dots? How to get them there?
           </aside>
         </section>
       </section>
@@ -268,7 +265,7 @@
         </section>
         <section>
           <p>Make `sprite.json` by hand in text-editor </p>
-<pre><code>{
+          <pre><code>{
   "iconname" : {
     "width": 32,
     "height": 32,
@@ -279,16 +276,16 @@
 }
 </code></pre>
 
-<p> <a href="https://docs.mapbox.com/mapbox-gl-js/style-spec/#sprite"> Sprite spec by Mapbox</a></p>
-<aside class="notes">
-A value of 1 indicates a classic 96 DPI (76 DPI on some platforms) display, while a value of 2 is expected
-for
-HiDPI/Retina displays.
-ow can we solve this problem with high DPI devices? Basically, provide two different version of each
-image.
-all fixed size graphics needs to be doubled in width and height in order to keep the sharpness of the
-graphic.
-</aside>
+          <p> <a href="https://docs.mapbox.com/mapbox-gl-js/style-spec/#sprite"> Sprite spec by Mapbox</a></p>
+          <aside class="notes">
+            A value of 1 indicates a classic 96 DPI (76 DPI on some platforms) display, while a value of 2 is expected
+            for
+            HiDPI/Retina displays.
+            ow can we solve this problem with high DPI devices? Basically, provide two different version of each
+            image.
+            all fixed size graphics needs to be doubled in width and height in order to keep the sharpness of the
+            graphic.
+          </aside>
         </section>
         <section>
           <p>Make `sprite.png` with <a href="https://www.gimp.org/">GIMP</a>! </p>
@@ -324,8 +321,7 @@ graphic.
           <img style="background-color: #f2f2f2; " src="https://ta.webmapper.nl/wm/sprites/pattern.png" />
         </section>
         <section>
-          <h3
-            style="text-align: left; color: #5a7551; background-color: rgba(255,255,255,0.4);">
+          <h3 style="text-align: left; color: #5a7551; background-color: rgba(255,255,255,0.4);">
             Take-Away #3: </br> &nbsp;&nbsp;&nbsp; Know your technology and change those defaults!
           </h3>
         </section>
@@ -341,8 +337,11 @@ graphic.
               <img src="img_coastline/kust_nl_oorlogskaart_zoom.png" height="250px" />
         </section>
         <section data-background-color="#f2f2f2"
-          data-background-iframe="https://nieneb.github.io/coastline_example_embed/index.html"
-          data-background-interactive>
+          data-background-iframe="https://nieneb.github.io/coastline_example_embed/index.html">
+          <div class="iconlinks" style="z-index:100;">
+            <a href="https://codepen.io/nieneb/pen/ZNPrRW"><i class="fab fa-codepen"></i></a>
+            <a href="https://github.com/NieneB/coastline_example"><i class="fab fa-github"></i></a>
+          </div>
           <aside class="notes">Transparant sprites yeah! color opacity>> NO! Combine half transparent layers to create
             new visual effects. </aside>
         </section>
@@ -375,7 +374,7 @@ graphic.
         <section style="background-color: #f3f3f3; opacity:0.9; ">
           <p>Map 4</p>
           <h1 style="color: #535353;">Crafty map</h1>
-          <a href="https://apps.webmapper.nl/crafty_map">> the app <</a> 
+          <p><a href="https://apps.webmapper.nl/crafty_map"> > the app </a></p>
         </section> 
         <section style="background-color: #f2f2f2;">
               <h3>What comes after styling?</h3>
@@ -384,7 +383,7 @@ graphic.
           <h3 id="animateBounce">Interactivity with JavaScript! </h3>
           <img src="https://media.giphy.com/media/itDBteCsTFSVO/giphy.gif" />
           <h3 style="text-align: left; color: #636363; background-color: rgba(255,255,255,0.4);">
-            Take-Away #7: </br> &nbsp;&nbsp;&nbsp; Combine those libraries! 
+            Take-Away #7: </br> &nbsp;&nbsp;&nbsp; Combine those libraries!
           </h3>
         </section>
         <section style="color: #f2f2f2; background-color: rgb(49, 117, 129);">
@@ -395,10 +394,13 @@ graphic.
 
 let points = turf.randomPoint(25, {bbox: [-180, -90, 180, 90]});
 </code></pre>
-         
         </section>
-        <section data-background-iframe="https://nieneb.github.io/balloons_example_embed/"
-          data-background-interactive data-background-color="#f2f2f2">
+        <section data-background-iframe="https://nieneb.github.io/balloons_example_embed/" data-background-interactive
+          data-background-color="#f2f2f2">
+          <div class="iconlinks" style="z-index:100;">
+            <a href="https://codepen.io/nieneb/pen/yWwKpo"><i class="fab fa-codepen"></i></a>
+            <a href="https://github.com/NieneB/balloons_example"><i class="fab fa-github"></i></a>
+          </div>
         </section>
         <section>
           <img style="background-color: #f2f2f2; " src="https://ta.webmapper.nl/wm/sprites/pattern.png" />
@@ -424,7 +426,7 @@ map.on("moveend", function() {
           <img style="background-color: #f2f2f2;" src="https://ta.webmapper.nl/wm/sprites/legend.png" />
         </section>
         <section>
-<pre><code>
+          <pre><code>
 if (!turf.booleanPointInPolygon(point, poly)){
   map.getSource('point').setData(drawRandomPoint());
 };</code></pre>
@@ -433,17 +435,22 @@ if (!turf.booleanPointInPolygon(point, poly)){
           <h3>Alright. Fun. </h3>
           <p> "But I can't read those labels! Where are my reading glasses?" </p>
         </section>
-        <section  data-background-color="#f2f2f2" data-background-iframe="https://nieneb.github.io/font_size_embed/"
+        <section data-background-color="#f2f2f2" data-background-iframe="https://nieneb.github.io/font_size_embed/"
           data-background-interactive>
+          <div class="iconlinks" style="z-index:100;">
+            <a href="https://codepen.io/nieneb/pen/yWwKpo"><i class="fab fa-codepen"></i></a>
+            <a href="https://github.com/NieneB/font_size_example"><i class="fab fa-github"></i></a>
+          </div>
+          </section>
         </section>
         <section>
           <h3 style="text-align: left; color: #636363; background-color: #f2f2f2;">
             Take-Away #9: </br> &nbsp;&nbsp;&nbsp; Making a good map is more then only desinging the map
           </h3>
           <aside class="notes">
-          <p>UX & IX design</p>
-          <p>The side story</p>
-          <p>Setting the mood/context</p>
+            <p>UX & IX design</p>
+            <p>The side story</p>
+            <p>Setting the mood/context</p>
           </aside>
         </section>
       </section>
@@ -455,66 +462,65 @@ if (!turf.booleanPointInPolygon(point, poly)){
           <h1 style="color: #f2f2f2;">Questions?</h1>
           <img src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif" />
           <p style="font-size: 12pt;">Presentation made with: <a href="https://revealjs.com/#/">Reveal.js</a> - <a
-              href="https://idyll-lang.org/">Idyll</a> - <a >MapboxGL.js</a> - <a>React </a> - <a href="https://codesandbox.io/">CodeSandbox </a> - <a
-              href="https://giphy.com/">Giphy</a></p>
-              <svg id="cartiqoSvg" width="254.47" height="79.292" version="1.1" viewBox="0 0 67.328 20.979"
-                xmlns="http://www.w3.org/2000/svg">
-                <g id="cartiqoLogo">
-                  <path id="c"
-                    d="m8.0751 8.5638q-0.0847 0.11642-0.16934 0.17992-0.0847 0.0635-0.24341 0.0635-0.15875 0-0.34925-0.127-0.17992-0.13759-0.46567-0.29634t-0.6985-0.28575q-0.40217-0.13758-0.99483-0.13758-0.78317 0-1.3864 0.28575-0.60325 0.27517-1.016 0.80433-0.40217 0.52917-0.61383 1.2806-0.20109 0.75141-0.20109 1.6828 0 0.97366 0.22225 1.7357 0.22225 0.75142 0.62442 1.27 0.40217 0.508 0.97367 0.78317 0.58208 0.26458 1.3018 0.26458 0.68791 0 1.1324-0.15875 0.4445-0.16933 0.74084-0.37041 0.29633-0.20109 0.48683-0.35984 0.1905-0.16933 0.381-0.16933 0.24342 0 0.35983 0.17992l0.52917 0.68791q-0.6985 0.85725-1.7462 1.2594-1.0478 0.39158-2.2119 0.39158-1.0054 0-1.8732-0.37041-0.85725-0.37042-1.4922-1.0689-0.635-0.70908-1.0054-1.7357-0.35984-1.0266-0.35984-2.3389 0-1.1959 0.32809-2.2119 0.33866-1.016 0.97366-1.7462 0.64559-0.74083 1.5875-1.1536 0.94192-0.41275 2.159-0.41275 1.1218 0 1.9897 0.37041 0.86783 0.35984 1.5346 1.0266z"
-                    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-                  </path>
-                  <path id="a"
-                    d="m16.802 15.94c-0.28223 0.254-0.55739 0.48331-0.8255 0.68792-0.26811 0.19755-0.55034 0.36689-0.84667 0.508-0.29633 0.13405-0.61383 0.23636-0.9525 0.30692-0.33161 0.0705-0.70203 0.10583-1.1112 0.10583-0.41628 0-0.80786-0.0564-1.1748-0.16933-0.35983-0.11995-0.67381-0.29634-0.94192-0.52917s-0.4833-0.52564-0.64558-0.87842c-0.15522-0.35983-0.23283-0.78317-0.23283-1.27 0-0.42333 0.11641-0.82903 0.34925-1.2171 0.23283-0.39511 0.60677-0.74436 1.1218-1.0478 0.52211-0.30339 1.203-0.55033 2.0426-0.74083 0.83961-0.19756 1.8662-0.31045 3.0798-0.33867v-0.83608c0-0.83256-0.17991-1.4605-0.53975-1.8838-0.35277-0.43039-0.87841-0.64558-1.5769-0.64558-0.45861 0-0.84667 0.06-1.1642 0.17992-0.31044 0.11289-0.58208 0.24341-0.81492 0.39158-0.22577 0.14111-0.42333 0.27164-0.59266 0.39158-0.16228 0.11289-0.32456 0.16934-0.48684 0.16934-0.127 0-0.23989-0.0318-0.33866-0.0953-0.0917-0.0706-0.16581-0.15523-0.22225-0.254l-0.33867-0.60325c0.59267-0.5715 1.2312-0.99836 1.9156-1.2806 0.68439-0.28222 1.4429-0.42333 2.2754-0.42333 0.59972 0 1.1324 0.0988 1.5981 0.29633 0.46567 0.19756 0.85725 0.47273 1.1748 0.8255 0.3175 0.35278 0.55739 0.77964 0.71967 1.2806 0.16228 0.50094 0.24342 1.0513 0.24342 1.651v6.8581l-0.21167-5.2e-4h-0.83608c-0.18345 0-0.33161-0.0282-0.4445-0.0847s-0.18698-0.17641-0.22225-0.35983zm-3.175 0.28578c0.33161 0 0.635-0.0317 0.91016-0.0952 0.27517-0.0705 0.5327-0.1658 0.77259-0.28575 0.24694-0.127 0.47977-0.27869 0.6985-0.45508 0.22577-0.17639 0.4445-0.37747 0.65616-0.60325v-2.2331c-0.86783 0.0282-1.6051 0.0987-2.2119 0.21166-0.60678 0.10583-1.1007 0.24695-1.4817 0.42334s-0.65969 0.38452-0.83608 0.62441c-0.16934 0.23989-0.254 0.50801-0.254 0.80434 0 0.28222 0.0459 0.52564 0.13758 0.73025 0.0917 0.20461 0.21519 0.37394 0.37042 0.508 0.15522 0.127 0.33866 0.22225 0.55033 0.28575 0.21167 0.0565 0.44097 0.0847 0.68792 0.0847z"
-                    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-                  </path>
-                  <path id="r"
-                    d="m23.18 8.8495c0.36689-0.74789 0.81844-1.33 1.3547-1.7462 0.54328-0.42333 1.1783-0.635 1.905-0.635 0.29634 0 0.56445 0.0353 0.80434 0.10583 0.23989 0.0635 0.46214 0.15519 0.66675 0.27517l-0.24342 1.4076c-0.0494 0.17639-0.15875 0.26459-0.32808 0.26459-0.0988 0-0.25048-0.0317-0.45509-0.0952-0.20461-0.0706-0.49036-0.10584-0.85725-0.10584-0.65616 0-1.2065 0.1905-1.651 0.5715-0.43744 0.381-0.80433 0.93486-1.1007 1.6616v6.8262l-1.8838-5e-5v-10.721h1.2109c0.20461 0 0.34572 0.0388 0.42333 0.11642 0.0776 0.0776 0.13053 0.21166 0.15875 0.40216z"
-                    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-                  </path>
-                  <path id="t"
-                    d="m30.521 3.5367c0.0141-0.10583 0.06-0.1905 0.13758-0.254 0.0776-0.0706 0.17639-0.10584 0.29633-0.10584h1.4499v3.6936h3.0692v1.3652h-3.0692v6.4347c0 0.45156 0.10936 0.7867 0.32809 1.0054 0.21872 0.21872 0.50094 0.32808 0.84666 0.32808 0.19756 0 0.36689-0.0247 0.508-0.0741 0.14817-0.0565 0.27517-0.11644 0.381-0.17992 0.10583-0.0635 0.19403-0.11991 0.26459-0.16933 0.0776-0.0565 0.14463-0.0847 0.20108-0.0847 0.0988 0 0.18697 0.06 0.26458 0.17992l0.55034 0.89958c-0.32456 0.30339-0.71614 0.54328-1.1748 0.71967-0.45861 0.16933-0.93134 0.254-1.4182 0.254-0.84667 0-1.4993-0.23636-1.9579-0.70908-0.45156-0.47273-0.67734-1.1536-0.67734-2.0426v-6.5617h-1.2912c-0.11289 0-0.20814-0.0317-0.28575-0.0952-0.0776-0.0706-0.11642-0.17639-0.11642-0.3175v-0.75142l1.6933-0.21465z"
-                    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-                  </path>
-                  <path id="i" d="m42.45 6.4048-1.3123 10.975h-3.2385l1.3123-10.975z"></path>
-                  <path id="ii"
-                    d="m42.326 1e-6c-1.4607 6e-5 -2.6447 1.1841-2.6448 2.6448 6e-5 1.4607 1.1841 2.6447 2.6448 2.6448 0.0867-9e-4 0.17325-6e-3 0.25942-0.0155l0.61236-5.1232c-0.28006-0.0989-0.57477-0.1499-0.87178-0.1509z">
-                  </path>
-                  <path id="q"
-                    d="m49.094 5.6662c-0.50398-0.0097-0.98525 0.06541-1.4429 0.22561-0.61024 0.21356-1.154 0.54987-1.632 1.0078-0.47004 0.45185-0.86199 1.0131-1.1752 1.684-0.31229 0.66396-0.51991 1.4013-0.62354 2.2127-0.11255 0.8814-0.11487 1.6811-7e-3 2.3987 0.11532 0.71144 0.31716 1.3273 0.60618 1.8477 0.28902 0.52034 0.65895 0.93732 1.1095 1.2508 0.45051 0.31348 0.95874 0.50655 1.5254 0.57891 0.69254 0.0884 1.3101 0.04262 1.852-0.13698 0.54282-0.18663 1.0466-0.45646 1.5111-0.80948l0.0632-0.04462-0.0155 0.11528-0.49709 3.8615c-7e-3 0.03526-0.0105 0.08816-0.0105 0.15867 0 0.11286 0.0139 0.22555 0.0422 0.33842 0.0353 0.11287 0.0916 0.21518 0.16921 0.30681 0.0776 0.09164 0.17639 0.1654 0.29627 0.22189 0.11988 0.06345 0.27159 0.09545 0.45495 0.09545h2.1576l1.8303-14.333 0.0329-0.25722h-2.157c-0.40902 0-0.63977 0.19049-0.8039 0.54978l-0.14504 0.30681c-0.15255-0.19721-0.31396-0.38186-0.48407-0.55288-0.17011-0.17102-0.3604-0.32327-0.57085-0.4568-0.20346-0.13262-0.43427-0.24359-0.69296-0.33346-0.25866-0.08996-0.55259-0.15573-0.88138-0.19772-0.17313-0.02209-0.34335-0.03519-0.51134-0.03843zm0.75989 2.5127c0.0731 0.0019 0.14731 0.0077 0.22251 0.01736 0.31479 0.0402 0.60471 0.13371 0.87023 0.2814 0.27251 0.14855 0.51783 0.37203 0.73572 0.67002l-0.58945 4.617c-0.16134 0.15002-0.32358 0.27837-0.48655 0.38552-0.15599 0.10805-0.31991 0.19389-0.49152 0.25722-0.17161 0.06341-0.3582 0.10689-0.56031 0.13078-0.19424 0.01787-0.41049 0.01177-0.64833-0.0186-0.25883-0.03305-0.48657-0.11557-0.68303-0.2473-0.19647-0.13172-0.35622-0.32637-0.47974-0.58387-0.11564-0.2636-0.19046-0.5967-0.22437-0.99914-0.0339-0.40246-0.0144-0.89039 0.0589-1.464 0.0759-0.5946 0.19353-1.0949 0.35205-1.5012 0.15853-0.40631 0.34476-0.72759 0.5597-0.96319 0.22281-0.24171 0.46807-0.40532 0.7351-0.49213 0.20026-0.06505 0.40984-0.09521 0.62911-0.08988z"
-                    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-                  </path>
-                  <path id="o"
-                    d="m62.226 6.4894c0.78316 0 1.4887 0.13053 2.1167 0.39158 0.635 0.26105 1.1712 0.63147 1.6087 1.1112 0.4445 0.47978 0.78317 1.0619 1.016 1.7462 0.23989 0.67733 0.35983 1.4358 0.35983 2.2754 0 0.84667-0.11994 1.6087-0.35983 2.286-0.23283 0.67733-0.5715 1.2559-1.016 1.7357-0.43744 0.47978-0.97367 0.8502-1.6087 1.1112-0.62794 0.254-1.3335 0.381-2.1167 0.381-0.78317 0-1.4922-0.127-2.1272-0.381-0.62795-0.26105-1.1642-0.63147-1.6087-1.1112-0.4445-0.47977-0.78669-1.0583-1.0266-1.7357s-0.35983-1.4393-0.35983-2.286c0-0.83961 0.11994-1.5981 0.35983-2.2754 0.23989-0.68439 0.58208-1.2665 1.0266-1.7462s0.98072-0.8502 1.6087-1.1112c0.635-0.26105 1.3441-0.39158 2.1272-0.39158zm0 9.5673c1.0583 0 1.8486-0.35278 2.3707-1.0583 0.52212-0.71261 0.78317-1.7039 0.78317-2.9739 0-1.277-0.26105-2.2719-0.78317-2.9845-0.52211-0.71261-1.3123-1.0689-2.3707-1.0689-0.53622 0-1.0019 0.0917-1.397 0.27517-0.39511 0.18345-0.72672 0.44803-0.99484 0.79375-0.26105 0.34572-0.45861 0.77258-0.59266 1.2806-0.127 0.50095-0.1905 1.0689-0.1905 1.7039s0.0635 1.203 0.1905 1.7039c0.13405 0.50094 0.33161 0.92427 0.59266 1.27 0.26812 0.33867 0.59973 0.59972 0.99484 0.78316 0.39511 0.18345 0.86078 0.27517 1.397 0.27517z"
-                    style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
-                  </path>
-                </g>
-              </svg>
-              <a href="http://webmapper.net">
-                <img src="backgrounds/webmapper_logo_tekst.png"
-                  height="90px" />
-              </a>
+              href="https://idyll-lang.org/">Idyll</a> - <a>MapboxGL.js</a> - <a>React </a> - <a
+              href="https://codesandbox.io/">CodeSandbox </a> - <a href="https://giphy.com/">Giphy</a></p>
+          <svg id="cartiqoSvg" width="254.47" height="79.292" version="1.1" viewBox="0 0 67.328 20.979"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="cartiqoLogo">
+              <path id="c"
+                d="m8.0751 8.5638q-0.0847 0.11642-0.16934 0.17992-0.0847 0.0635-0.24341 0.0635-0.15875 0-0.34925-0.127-0.17992-0.13759-0.46567-0.29634t-0.6985-0.28575q-0.40217-0.13758-0.99483-0.13758-0.78317 0-1.3864 0.28575-0.60325 0.27517-1.016 0.80433-0.40217 0.52917-0.61383 1.2806-0.20109 0.75141-0.20109 1.6828 0 0.97366 0.22225 1.7357 0.22225 0.75142 0.62442 1.27 0.40217 0.508 0.97367 0.78317 0.58208 0.26458 1.3018 0.26458 0.68791 0 1.1324-0.15875 0.4445-0.16933 0.74084-0.37041 0.29633-0.20109 0.48683-0.35984 0.1905-0.16933 0.381-0.16933 0.24342 0 0.35983 0.17992l0.52917 0.68791q-0.6985 0.85725-1.7462 1.2594-1.0478 0.39158-2.2119 0.39158-1.0054 0-1.8732-0.37041-0.85725-0.37042-1.4922-1.0689-0.635-0.70908-1.0054-1.7357-0.35984-1.0266-0.35984-2.3389 0-1.1959 0.32809-2.2119 0.33866-1.016 0.97366-1.7462 0.64559-0.74083 1.5875-1.1536 0.94192-0.41275 2.159-0.41275 1.1218 0 1.9897 0.37041 0.86783 0.35984 1.5346 1.0266z"
+                style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+              </path>
+              <path id="a"
+                d="m16.802 15.94c-0.28223 0.254-0.55739 0.48331-0.8255 0.68792-0.26811 0.19755-0.55034 0.36689-0.84667 0.508-0.29633 0.13405-0.61383 0.23636-0.9525 0.30692-0.33161 0.0705-0.70203 0.10583-1.1112 0.10583-0.41628 0-0.80786-0.0564-1.1748-0.16933-0.35983-0.11995-0.67381-0.29634-0.94192-0.52917s-0.4833-0.52564-0.64558-0.87842c-0.15522-0.35983-0.23283-0.78317-0.23283-1.27 0-0.42333 0.11641-0.82903 0.34925-1.2171 0.23283-0.39511 0.60677-0.74436 1.1218-1.0478 0.52211-0.30339 1.203-0.55033 2.0426-0.74083 0.83961-0.19756 1.8662-0.31045 3.0798-0.33867v-0.83608c0-0.83256-0.17991-1.4605-0.53975-1.8838-0.35277-0.43039-0.87841-0.64558-1.5769-0.64558-0.45861 0-0.84667 0.06-1.1642 0.17992-0.31044 0.11289-0.58208 0.24341-0.81492 0.39158-0.22577 0.14111-0.42333 0.27164-0.59266 0.39158-0.16228 0.11289-0.32456 0.16934-0.48684 0.16934-0.127 0-0.23989-0.0318-0.33866-0.0953-0.0917-0.0706-0.16581-0.15523-0.22225-0.254l-0.33867-0.60325c0.59267-0.5715 1.2312-0.99836 1.9156-1.2806 0.68439-0.28222 1.4429-0.42333 2.2754-0.42333 0.59972 0 1.1324 0.0988 1.5981 0.29633 0.46567 0.19756 0.85725 0.47273 1.1748 0.8255 0.3175 0.35278 0.55739 0.77964 0.71967 1.2806 0.16228 0.50094 0.24342 1.0513 0.24342 1.651v6.8581l-0.21167-5.2e-4h-0.83608c-0.18345 0-0.33161-0.0282-0.4445-0.0847s-0.18698-0.17641-0.22225-0.35983zm-3.175 0.28578c0.33161 0 0.635-0.0317 0.91016-0.0952 0.27517-0.0705 0.5327-0.1658 0.77259-0.28575 0.24694-0.127 0.47977-0.27869 0.6985-0.45508 0.22577-0.17639 0.4445-0.37747 0.65616-0.60325v-2.2331c-0.86783 0.0282-1.6051 0.0987-2.2119 0.21166-0.60678 0.10583-1.1007 0.24695-1.4817 0.42334s-0.65969 0.38452-0.83608 0.62441c-0.16934 0.23989-0.254 0.50801-0.254 0.80434 0 0.28222 0.0459 0.52564 0.13758 0.73025 0.0917 0.20461 0.21519 0.37394 0.37042 0.508 0.15522 0.127 0.33866 0.22225 0.55033 0.28575 0.21167 0.0565 0.44097 0.0847 0.68792 0.0847z"
+                style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+              </path>
+              <path id="r"
+                d="m23.18 8.8495c0.36689-0.74789 0.81844-1.33 1.3547-1.7462 0.54328-0.42333 1.1783-0.635 1.905-0.635 0.29634 0 0.56445 0.0353 0.80434 0.10583 0.23989 0.0635 0.46214 0.15519 0.66675 0.27517l-0.24342 1.4076c-0.0494 0.17639-0.15875 0.26459-0.32808 0.26459-0.0988 0-0.25048-0.0317-0.45509-0.0952-0.20461-0.0706-0.49036-0.10584-0.85725-0.10584-0.65616 0-1.2065 0.1905-1.651 0.5715-0.43744 0.381-0.80433 0.93486-1.1007 1.6616v6.8262l-1.8838-5e-5v-10.721h1.2109c0.20461 0 0.34572 0.0388 0.42333 0.11642 0.0776 0.0776 0.13053 0.21166 0.15875 0.40216z"
+                style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+              </path>
+              <path id="t"
+                d="m30.521 3.5367c0.0141-0.10583 0.06-0.1905 0.13758-0.254 0.0776-0.0706 0.17639-0.10584 0.29633-0.10584h1.4499v3.6936h3.0692v1.3652h-3.0692v6.4347c0 0.45156 0.10936 0.7867 0.32809 1.0054 0.21872 0.21872 0.50094 0.32808 0.84666 0.32808 0.19756 0 0.36689-0.0247 0.508-0.0741 0.14817-0.0565 0.27517-0.11644 0.381-0.17992 0.10583-0.0635 0.19403-0.11991 0.26459-0.16933 0.0776-0.0565 0.14463-0.0847 0.20108-0.0847 0.0988 0 0.18697 0.06 0.26458 0.17992l0.55034 0.89958c-0.32456 0.30339-0.71614 0.54328-1.1748 0.71967-0.45861 0.16933-0.93134 0.254-1.4182 0.254-0.84667 0-1.4993-0.23636-1.9579-0.70908-0.45156-0.47273-0.67734-1.1536-0.67734-2.0426v-6.5617h-1.2912c-0.11289 0-0.20814-0.0317-0.28575-0.0952-0.0776-0.0706-0.11642-0.17639-0.11642-0.3175v-0.75142l1.6933-0.21465z"
+                style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+              </path>
+              <path id="i" d="m42.45 6.4048-1.3123 10.975h-3.2385l1.3123-10.975z"></path>
+              <path id="ii"
+                d="m42.326 1e-6c-1.4607 6e-5 -2.6447 1.1841-2.6448 2.6448 6e-5 1.4607 1.1841 2.6447 2.6448 2.6448 0.0867-9e-4 0.17325-6e-3 0.25942-0.0155l0.61236-5.1232c-0.28006-0.0989-0.57477-0.1499-0.87178-0.1509z">
+              </path>
+              <path id="q"
+                d="m49.094 5.6662c-0.50398-0.0097-0.98525 0.06541-1.4429 0.22561-0.61024 0.21356-1.154 0.54987-1.632 1.0078-0.47004 0.45185-0.86199 1.0131-1.1752 1.684-0.31229 0.66396-0.51991 1.4013-0.62354 2.2127-0.11255 0.8814-0.11487 1.6811-7e-3 2.3987 0.11532 0.71144 0.31716 1.3273 0.60618 1.8477 0.28902 0.52034 0.65895 0.93732 1.1095 1.2508 0.45051 0.31348 0.95874 0.50655 1.5254 0.57891 0.69254 0.0884 1.3101 0.04262 1.852-0.13698 0.54282-0.18663 1.0466-0.45646 1.5111-0.80948l0.0632-0.04462-0.0155 0.11528-0.49709 3.8615c-7e-3 0.03526-0.0105 0.08816-0.0105 0.15867 0 0.11286 0.0139 0.22555 0.0422 0.33842 0.0353 0.11287 0.0916 0.21518 0.16921 0.30681 0.0776 0.09164 0.17639 0.1654 0.29627 0.22189 0.11988 0.06345 0.27159 0.09545 0.45495 0.09545h2.1576l1.8303-14.333 0.0329-0.25722h-2.157c-0.40902 0-0.63977 0.19049-0.8039 0.54978l-0.14504 0.30681c-0.15255-0.19721-0.31396-0.38186-0.48407-0.55288-0.17011-0.17102-0.3604-0.32327-0.57085-0.4568-0.20346-0.13262-0.43427-0.24359-0.69296-0.33346-0.25866-0.08996-0.55259-0.15573-0.88138-0.19772-0.17313-0.02209-0.34335-0.03519-0.51134-0.03843zm0.75989 2.5127c0.0731 0.0019 0.14731 0.0077 0.22251 0.01736 0.31479 0.0402 0.60471 0.13371 0.87023 0.2814 0.27251 0.14855 0.51783 0.37203 0.73572 0.67002l-0.58945 4.617c-0.16134 0.15002-0.32358 0.27837-0.48655 0.38552-0.15599 0.10805-0.31991 0.19389-0.49152 0.25722-0.17161 0.06341-0.3582 0.10689-0.56031 0.13078-0.19424 0.01787-0.41049 0.01177-0.64833-0.0186-0.25883-0.03305-0.48657-0.11557-0.68303-0.2473-0.19647-0.13172-0.35622-0.32637-0.47974-0.58387-0.11564-0.2636-0.19046-0.5967-0.22437-0.99914-0.0339-0.40246-0.0144-0.89039 0.0589-1.464 0.0759-0.5946 0.19353-1.0949 0.35205-1.5012 0.15853-0.40631 0.34476-0.72759 0.5597-0.96319 0.22281-0.24171 0.46807-0.40532 0.7351-0.49213 0.20026-0.06505 0.40984-0.09521 0.62911-0.08988z"
+                style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+              </path>
+              <path id="o"
+                d="m62.226 6.4894c0.78316 0 1.4887 0.13053 2.1167 0.39158 0.635 0.26105 1.1712 0.63147 1.6087 1.1112 0.4445 0.47978 0.78317 1.0619 1.016 1.7462 0.23989 0.67733 0.35983 1.4358 0.35983 2.2754 0 0.84667-0.11994 1.6087-0.35983 2.286-0.23283 0.67733-0.5715 1.2559-1.016 1.7357-0.43744 0.47978-0.97367 0.8502-1.6087 1.1112-0.62794 0.254-1.3335 0.381-2.1167 0.381-0.78317 0-1.4922-0.127-2.1272-0.381-0.62795-0.26105-1.1642-0.63147-1.6087-1.1112-0.4445-0.47977-0.78669-1.0583-1.0266-1.7357s-0.35983-1.4393-0.35983-2.286c0-0.83961 0.11994-1.5981 0.35983-2.2754 0.23989-0.68439 0.58208-1.2665 1.0266-1.7462s0.98072-0.8502 1.6087-1.1112c0.635-0.26105 1.3441-0.39158 2.1272-0.39158zm0 9.5673c1.0583 0 1.8486-0.35278 2.3707-1.0583 0.52212-0.71261 0.78317-1.7039 0.78317-2.9739 0-1.277-0.26105-2.2719-0.78317-2.9845-0.52211-0.71261-1.3123-1.0689-2.3707-1.0689-0.53622 0-1.0019 0.0917-1.397 0.27517-0.39511 0.18345-0.72672 0.44803-0.99484 0.79375-0.26105 0.34572-0.45861 0.77258-0.59266 1.2806-0.127 0.50095-0.1905 1.0689-0.1905 1.7039s0.0635 1.203 0.1905 1.7039c0.13405 0.50094 0.33161 0.92427 0.59266 1.27 0.26812 0.33867 0.59973 0.59972 0.99484 0.78316 0.39511 0.18345 0.86078 0.27517 1.397 0.27517z"
+                style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal">
+              </path>
+            </g>
+          </svg>
+          <a href="http://webmapper.net">
+            <img src="backgrounds/webmapper_logo_tekst.png" height="90px" />
+          </a>
         </section>
         <section>
-          <p>Feedback? Let me know! </p>
+          <p>Feedback? Get in touch? Reach out! </p>
           <table>
             <tr>
               <td><i class="fa fa-envelope"> niene@webmapper.net</i></td>
             </tr>
             <tr>
-              <td><i class="fa fa-twitter-square"> @BNiene</i></td>
+              <td><i class="fab fa-twitter-square"> @BNiene</i></td>
             </tr>
             <tr>
-              <td><i class="fa fa-github"> NieneB</i></td>
+              <td><i class="fab fa-github"> NieneB</i></td>
             </tr>
             <tr>
               <td><i class="fa fa-link"> NieneB.nl</i></td>
             </tr>
             <tr>
-              <td><i class="fa fa-linkedin"> Niene Boeijen</i></td>
+              <td><i class="fab fa-linkedin"> Niene Boeijen</i></td>
             </tr>
             <tr>
-              <td><i class="fa fa-instagram"> volvo_343_dl_1980</i></td>
+              <td><i class="fab fa-instagram"> volvo_343_dl_1980</i></td>
             </tr>
           </table>
           <p><a style="color:#f2f2f2;" href="https://nieneb.github.io/styling_vector_tiles/">
@@ -536,7 +542,7 @@ if (!turf.booleanPointInPolygon(point, poly)){
     // - https://github.com/hakimel/reveal.js#dependencies
     Reveal.initialize({
       // Display the page number of the current slide
-      slideNumber: false,
+      slideNumber: true,
       // Flags if speaker notes should be visible to all viewers
       showNotes: false,
       dependencies: [

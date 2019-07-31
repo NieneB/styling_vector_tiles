@@ -12,6 +12,12 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   fill: rgb(49, 117, 129);
 }
 
+
+.iconlinks{
+  position: absolute;
+  top:-340px;
+  right:-170px;
+}
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
