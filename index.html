@@ -27,19 +27,19 @@
 
 <body>
   <div class="reveal">
-    <div class="slides">
+    <div class="slides" style="color:#f2f2f2;">
       <!-- Introduction -->
-      <section style="color:#f2f2f2;"
+      <section class="blend" style="color:#f2f2f2; "
         data-background-image="backgrounds/Data Test Viewer WM Cloud stack - Mozilla Firefox.png">
         <section>
-          <h1 style="color:#f2f2f2; text-shadow: none;" id="animateBounce">Styling Vector Tiles</h1>
+          <h1 style="color:#f2f2f2; text-shadow: 2px 2px 4px #333333;" id="animateBounce">Styling Vector Tiles</h1>
           <h2 style="margin: 0 0 40px 0;"></h2>
-          <h3 style="margin: 0 0 0 0; text-shadow: none; color:#f2f2f2;">By: Niene Boeijen</h3>
+          <h3 style="margin: 0 0 0 0; text-shadow: 2px 2px 4px #333333; color:#317581;">Niene Boeijen</h3>
           <h2 style="margin: 0 0 40px 0;"></h2>
-          <p><a style="color:#f2f2f2;" href="https://nieneb.github.io/styling_vector_tiles/">
+          <p><a style="color:#f2f2f2; text-shadow: 2px 2px 4px #333333;" href="https://nieneb.github.io/styling_vector_tiles/">
               nieneb.github.io/styling_vector_tiles </a></p>
         </section>
-        <section style="background-color: #f2f2f2;  color:#535353;">
+        <section style="  background-image: url('../../backgrounds/exclusive-paper.png');  background-color: #f2f2f2; color:#535353;">
           <h2>Niene Boeijen </h2>
           <div style="float:left; width:50%;">
             <img src="https://raw.githubusercontent.com/NieneB/Webmapping_for_beginners/gh-pages/img/wur.jpg"
@@ -66,36 +66,39 @@
             Full Stack Web Map Developer.
           </aside>
         </section>
-        <section>
-          <a href="http://webmapper.net">
-            <img style="background-color: #f2f2f2; border-radius: 5px; padding:10px;"
-              src="backgrounds/webmapper_logo_tekst.png" height="150px" />
-          </a>
-          <h2>What the map can be</h2>
-          <p>Edward, Frederieke, Niene & Steven</p>
-          <p>Geography, Geo-informatie science, Art Academy, Geo Media Design</p>
-          <p> Utrecht, The Netherlands </p>
+        <section data-background-image="backgrounds/webmapperbkg.png" style="color:#eeeeec; text-shadow: 0px 0px 4px #333333">
+            <a href="http://webmapper.net">
+              <h3 style="color:#eeeeec; text-shadow: 2px 2px 4px #333333">Webmapper</h3>
+            </a>
+          <h4 style="color:#eeeeec; text-shadow: 2px 2px 4px #333333 ">Utrecht, the Netherlands</h4>
+          <br />
+          <br />
+          <br />
+          <br />
+          <p class="fragment fade-up">Data - Design - Technology</p>
         </section>
-        <section>
-          <a href="http://webmapper.net">
-            <img style="background-color: #f2f2f2; border-radius: 5px; padding:10px;"
-              src="backgrounds/webmapper_logo_tekst.png" height="150px" /> </a>
-          <h2>What the map can be</h2>
-          <p>We make interactive map and geo data visualizations</p>
+          <section data-background-image="backgrounds/webmapperbkg.png" style="color:#eeeeec; text-shadow: 0px 0px 4px #333333">
+            <a href="http://webmapper.net"><h3 style="color:#eeeeec; text-shadow: 2px 2px 4px #333333">Webmapper</h3></a>
+            <h4 style="color:#eeeeec; text-shadow: 2px 2px 4px #333333 ">Utrecht, the Netherlands</h4>
+            <br />
+            <br />
+            <br />
+            <br />
+          <p>We make interactive maps & geo data visualizations</p>
           <p>Our expertise is open {source; data; standards}</p>
           <p>We combine cartography with web technology</p>
         </section>
         <section>
-          <h1>This presentation:</h1>
-          <p>All about visualization Tips & Tricks! </p>
+          <h3>This presentation:</h3>
+          <p>All about visualization: Tips & Tricks! </p>
         </section>
         <section>
-          <p>With 4 map examples! </p>
+          <h3>4 map examples! </h3>
           <!-- <img style="border:none;" src="backgrounds/all_4.png"> -->
           <img style="border:none;" src="backgrounds/all_4.png" height="500px" />
         </section>
         <section>
-          <p>4 Maps </p>
+          <h3>4 Maps </h3>
           <p>Made by me! </p>
           <p>Using <a href="https://docs.mapbox.com/mapbox-gl-js/api/">Mapbox-GL.js</a></p>
           <p>Tiles from <a href="https://cartiqo.nl">Cartiqo</a></p>
@@ -103,11 +106,10 @@
           <p>No access tokens needed! </p>
         </section>
         <section>
-          <h3>Follow along!</h3>
-          <p>So many links & code examples!</p>
-          <p>Examples on Codesandbox & Me github, see the icons <i class="fab fa-github"></i> </p>
-          <a href="https://nieneb.github.io/styling_vector_tiles/"> nieneb.github.io/styling_vector_tiles </a>
-          <p>bit.ly/2Ro3tsz</p>
+          <h3>Click along!</h3>
+          <p>A lot of links, tools & code examples!</p>
+          <p> Go to:</p>
+          <h2><a href="https://nieneb.github.io/styling_vector_tiles/"> nieneb.github.io/ </br>styling_vector_tiles </a></h2>
         </section>
       </section>
       <!-- Having a good tileset -->
@@ -125,6 +127,15 @@
               <aside class="notes">
                 Good tile set. Show nature, forest etc. Good tiles == quick styling!
               </aside>
+        </section>
+        <section data-background-iframe="./cartiqobeeld/">
+          <div style="font-family: 'cartiqo'; font-size: 100px; color: #eeeeec">cartiqo</div>
+        </section>
+        <section data-background-iframe="./cartiqobeeld/">
+          <p style=" font-size: 50px; color: #eeeeec">Consistent</p>
+          <p class="fragment slide-up" style=" font-size: 50px; color: #eeeeec">Accurate</p>
+          <p class="fragment slide-up" style=" font-size: 50px; color: #eeeeec">Simple</p>
+          <p class="fragment slide-up" style=" font-size: 50px; color: #eeeeec">Fast</p>
         </section>
         <section data-background-image="backgrounds/Topo_twitter.png" style="color: #535353;">
           <svg id="cartiqoSvg" width="254.47" height="79.292" version="1.1" viewBox="0 0 67.328 20.979"
@@ -263,6 +274,8 @@
           <p class="fragment appear"> ..special effects! </p>
           <p class="fragment appear"> ..we will have to make them by hand! </p>
         </section>
+        <section data-background-iframe="https://apps.webmapper.nl/takemeto1943/#10.56/52.0043/4.3919"
+          data-background-interactive></section>
         <section>
           <p>Make `sprite.json` by hand in text-editor </p>
           <pre><code>{
@@ -314,6 +327,7 @@
             <li><a href="https://ta.webmapper.nl/wm/sprites/legend.png">legend.png</a></li>
             <li> <a href="https://ta.webmapper.nl/wm/sprites/legend.json">legend.json</a></li>
         </section>
+        
         <section>
           <img style="background-color: #f2f2f2; " src="https://bertspaan.nl/paradijs-in-de-polder/sprite/sprite.png" />
         </section>
@@ -441,7 +455,6 @@ if (!turf.booleanPointInPolygon(point, poly)){
             <a href="https://codepen.io/nieneb/pen/yWwKpo"><i class="fab fa-codepen"></i></a>
             <a href="https://github.com/NieneB/font_size_example"><i class="fab fa-github"></i></a>
           </div>
-          </section>
         </section>
         <section>
           <h3 style="text-align: left; color: #636363; background-color: #f2f2f2;">
