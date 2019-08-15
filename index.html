@@ -215,8 +215,8 @@
           <p>More about Cartiqo later today (11:20): Steven Ottens, Building a national vector tile set for the
             Netherlands</p>
         </section>
-        <section>
-          <h1> How do I code my map? </h1>
+        <section style="color: #535353;">
+          <h3> How do I code my map? </h3>
           <p>Text editor</p>
           <p>Online hex color tools</p>
           <p>Browser</p>
@@ -235,8 +235,8 @@
         <section>
           <h3
             style="text-align: left; text-shadow: 2px 2px #636363; color: #a4de1b; background-color: rgba(255,255,255,0.4);">
-            Take-Away #2: </br> &nbsp;&nbsp;&nbsp; a Polygon does not have to be a Polygon!!</h3>
-          <p>Use sprites!</p>
+            Take-Away #2: </br> &nbsp;&nbsp; a Polygon does not have to be a Polygon!!</h3>
+            <p style="color: #535353;">Use sprites</p>
           <aside class="notes">
             Style Polygon as symbol points.
             Line not a line
@@ -253,7 +253,7 @@
           <h1 style="color: #535353;">Take me to 1943!</h1>
           <a href="https://apps.webmapper.nl/takemeto1943/#14.5/51.76409/5.60482">> the app <</a> </section> <section
               style="color: #535353;">
-              <h2>What is a sprite?</h2>
+              <h3>What is a sprite?</h3>
               <p>sprite.json</p>
               <p>sprite.png</p>
               <a href="https://docs.mapbox.com/help/glossary/sprite/">Mapbox</a>
@@ -322,7 +322,7 @@
           <img src="img_1943/cleaning_sprite.png" />
         </section>
         <section>
-          <p>Final files: </p>
+          <h3>Final files: </h3>
           <ul>
             <li><a href="https://ta.webmapper.nl/wm/sprites/legend.png">legend.png</a></li>
             <li> <a href="https://ta.webmapper.nl/wm/sprites/legend.json">legend.json</a></li>
@@ -342,7 +342,7 @@
       </section>
       <!-- Combining layers -->
       <section data-background-image="backgrounds/Test Viewer WM Cloud stack - Mozilla Firefox.png">
-        <section>
+        <section style="color: #535353;">
           <p>Map 3</p>
           <h1 style="color: #535353;">Bevrijdingskaart.nl</h1>
           <a href="https://Bevrijdingskaart.nl">> the app <</a> </section> <section>
@@ -350,7 +350,7 @@
               <img src="img_coastline/kust_nl_oorlogskaart.png" height="250px" />
               <img src="img_coastline/kust_nl_oorlogskaart_zoom.png" height="250px" />
         </section>
-        <section data-background-color="#f2f2f2"
+        <section data-background-color="#f2f2f2" style="color: #535353;"
           data-background-iframe="https://nieneb.github.io/coastline_example_embed/index.html">
           <div class="iconlinks" style="z-index:100;">
             <a href="https://codepen.io/nieneb/pen/ZNPrRW"><i class="fab fa-codepen"></i></a>
@@ -385,23 +385,25 @@
       </section>
       <!-- Random air balloons -->
       <section data-background-image="backgrounds/Crafty Map - Mozilla Firefox.png">
-        <section style="background-color: #f3f3f3; opacity:0.9; ">
+        <section style="color: #535353; background-image: url('../../backgrounds/exclusive-paper.png'); background-color: #ffffff;  ">
           <p>Map 4</p>
           <h1 style="color: #535353;">Crafty map</h1>
-          <p><a href="https://apps.webmapper.nl/crafty_map"> > the app </a></p>
+          <p><a href="https://apps.webmapper.nl/crafty_map">  the app </a></p>
         </section> 
-        <section style="background-color: #f2f2f2;">
+        <section style=" background-image: url('../../backgrounds/exclusive-paper.png');  background-color: #ffffff ;">
               <h3>What comes after styling?</h3>
+              <h3 class="fragment appear" data-fragment-index="1" id="animateBounce">Interactivity with JavaScript! </h3>
+              <p  style="color: #535353; font-size: 10pt;" class="fragment appear small" data-fragment-index="3"> ( ^ this is CSS )</p>
+              <img class="fragment appear" data-fragment-index="2" src="https://media.giphy.com/media/itDBteCsTFSVO/giphy.gif" />
         </section>
-        <section style="background-color: #f2f2f2;">
-          <h3 id="animateBounce">Interactivity with JavaScript! </h3>
-          <img src="https://media.giphy.com/media/itDBteCsTFSVO/giphy.gif" />
-          <h3 style="text-align: left; color: #636363; background-color: rgba(255,255,255,0.4);">
+        <section style="color: #535353; background-image: url('../../backgrounds/exclusive-paper.png'); background-color: #ffffff;  ">
+          <h3 style="text-align: left; color: #636363;">
             Take-Away #7: </br> &nbsp;&nbsp;&nbsp; Combine those libraries!
           </h3>
+          <p> Turf D3 CSS React Vue </p>
         </section>
-        <section style="color: #f2f2f2; background-color: rgb(49, 117, 129);">
-          <h4><a href="http://turfjs.org/">turf.js</a> </h4>
+        <section style=" background-image: url('../../backgrounds/exclusive-paper.png'); color: #f2f2f2; background-color: rgb(49, 117, 129);">
+          <h3><a href="http://turfjs.org/">turf.js</a> </h3>
           <p>Advanced geospatial analysis for browsers </p>
           <p>Creating a simple GeoJSON with Turf.js</p>
           <pre><code>let bounds =  map.getBounds();
@@ -419,9 +421,8 @@ let points = turf.randomPoint(25, {bbox: [-180, -90, 180, 90]});
         <section>
           <img style="background-color: #f2f2f2; " src="https://ta.webmapper.nl/wm/sprites/pattern.png" />
         </section>
-        <section style="color: #f2f2f2; background-color: rgb(49, 117, 129);">
-          <h3 style="text-align: left; color: #636363;">
-            Take-Away #8: </br> &nbsp;&nbsp;&nbsp; Use Map events
+        <section style="color: #f2f2f2; background-color: rgb(49, 117, 129); background-image: url('../../backgrounds/exclusive-paper.png');">
+          <h3 style="text-align: left;"> Take-Away #8: </br> &nbsp;&nbsp;&nbsp; Use Map events
           </h3>
           <pre><code>
 map.on("load", function(e) {
@@ -445,9 +446,9 @@ if (!turf.booleanPointInPolygon(point, poly)){
   map.getSource('point').setData(drawRandomPoint());
 };</code></pre>
         </section>
-        <section style="background-color: #f2f2f2;">
+        <section style="background-color: #ffffff; background-image: url('../../backgrounds/exclusive-paper.png');">
           <h3>Alright. Fun. </h3>
-          <p> "But I can't read those labels! Where are my reading glasses?" </p>
+          <p style="color: #535353; font-size:2em;" class="fragment appear"> "But I can't read those labels! Where are my reading glasses?" </p>
         </section>
         <section data-background-color="#f2f2f2" data-background-iframe="https://nieneb.github.io/font_size_embed/"
           data-background-interactive>

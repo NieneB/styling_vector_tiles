@@ -64,7 +64,7 @@ body {
 }
 
 #animateBounce{
-  mix-blend-mode: color-burn;
+  /* mix-blend-mode: color-burn; */
   animation: bounceIn 2s infinite alternate;
 
 }
@@ -102,6 +102,7 @@ text-decoration: underline; }
 .reveal h3 {
   font-size: 1.3em; 
   color: #ffffff;
+  padding: 3px;
 }
 
 .reveal h4 {
